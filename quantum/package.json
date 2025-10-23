@@ -1,0 +1,13 @@
+{
+  "name": "quantum",
+  "version": "1.0.0",
+  "description": "A quantum computing simulator",
+  "main": "main.py",
+  "scripts": {
+    "start": "python main.py"
+  },
+  "dependencies": {
+    "numpy": "^1.21.0",
+    "scipy": "^1.7.0"
+  }
+}
