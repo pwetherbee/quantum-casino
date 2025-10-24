@@ -1,0 +1,31 @@
+[project]
+name = "quantum-games"
+version = "0.1.0"
+description = "Quantum casino games backend using IBM Quantum"
+authors = [
+    {name = "Patrick Wetherbee",email = "pwetherb96@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "qiskit (>=2.2.2,<3.0.0)",
+    "qiskit-ibm-runtime (>=0.43.1,<0.44.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "quantum_games", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.server.dependencies]
+fastapi = "^0.120.0"
+uvicorn = "^0.38.0"
+pydantic = "^2.12.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
